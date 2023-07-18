@@ -1,0 +1,28 @@
+.wrapper {
+    display: flex;
+}
+.settings,
+.preview {
+    width: calc(50%);
+}
+.settings {
+    display: flex;
+    flex-direction: column;
+}
+.preview__content {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+.preview__img {
+}
+.preview__top-text {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+}
+.preview__bottom-text {
+    position: absolute;
+    bottom: 10px;
+    left: 20px;
+}
