@@ -34,7 +34,6 @@ class View {
   }
 
   getSelectMem() {
-    console.log(this.listNode.value);
     return this.listNode.value;
   }
 

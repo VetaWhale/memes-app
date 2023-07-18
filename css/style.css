@@ -17,13 +17,15 @@ option {
 .container {
   padding: 20px;
   display: flex;
+  justify-content: space-around;
   gap: 50px;
 }
-.settings,
+/* .settings,
 .preview {
   width: calc(50%);
-}
+} */
 .settings {
+  max-width: 400px;
   display: flex;
   flex-direction: column;
 }
@@ -42,6 +44,9 @@ option {
 }
 .error-text {
   color: red;
+}
+.preview {
+    width: 500px;
 }
 .preview__content {
   position: relative;
@@ -67,4 +72,9 @@ option {
   left: 0;
   text-align: center;
   word-break: break-all;
+}
+@media only screen and (max-width: 915px) {
+    .container {
+        flex-direction: column;
+    }
 }
