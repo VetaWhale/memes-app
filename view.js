@@ -62,7 +62,7 @@ class View {
   _handleTopText = () => {
     const text = this.inputTopText.value;
 
-    if (text.length >= 10) return this._renderErrorTopText(this.ERROR_TEXT);
+    if (text.length >= 50) return this._renderErrorTopText(this.ERROR_TEXT);
 
     this._renderErrorTopText("");
     this._renderTopText(text);

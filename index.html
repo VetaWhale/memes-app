@@ -1,33 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
-    <link rel="stylesheet" href="css/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
     <title>Memes App</title>
-</head>
-<body>
-    <div class="wrapper">
-        <div class="settings">
-            <h2>Настройки:</h2>
-            <p>Мем</p>
-            <select name="" id="mems-name"></select>
-            <p>Текст сверху</p>
-            <input class="text-top" id="input-top-text" type="text" maxlength="50">
-            <p id="error-top-text"></p>
-            <p>Текст снизу</p>
-            <input class="text-bottom" id="input-bottom-text" type="text" maxlength="50">
-            <p id="error-bottom-text"></p>
+  </head>
+  <body>
+    <div class="container">
+      <div class="settings">
+        <h2>Настройки:</h2>
+        <p>Мем</p>
+        <select class="settings-options" name="" id="mems-name"></select>
+        <p>Текст сверху</p>
+        <input
+          class="text-top"
+          id="input-top-text"
+          type="text"
+          maxlength="50"
+        />
+        <p id="error-top-text" class="error-text"></p>
+        <p>Текст снизу</p>
+        <input
+          class="text-bottom"
+          id="input-bottom-text"
+          type="text"
+          maxlength="50"
+        />
+        <p id="error-bottom-text" class="error-text"></p>
+      </div>
+      <div class="preview">
+        <h2>Превью:</h2>
+        <div class="preview__content">
+          <img id="picture-mem" src="" alt="" class="preview__img"/>
+          <p class="preview__top-text" id="top-text"></p>
+          <p class="preview__bottom-text" id="bottom-text"></p>
         </div>
-        <div class="preview">
-            <h2>Превью:</h2>
-            <div class="preview__content">
-                <img id="picture-mem" src="img/demo.png" alt="">
-                <p class="preview__top-text" id="top-text"></p>
-                <p class="preview__bottom-text" id="bottom-text"></p>
-            </div>
-        </div>
+      </div>
     </div>
 
     <script src="model.js"></script>
@@ -35,6 +51,5 @@
     <script src="api.js"></script>
     <script src="controler.js"></script>
     <script src="index.js"></script>
-    
-</body>
+  </body>
 </html>
