@@ -46,13 +46,11 @@ option {
 .preview__content {
   position: relative;
   color: white;
-  height: 500px;
 }
 .preview__img {
   top: 0;
   left: 0;
-  height: 100%;
-  /* width: 100%; */
+  width: 100%;
 }
 .preview__top-text {
   position: absolute;
