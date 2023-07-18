@@ -20,10 +20,6 @@ option {
   justify-content: space-around;
   gap: 50px;
 }
-/* .settings,
-.preview {
-  width: calc(50%);
-} */
 .settings {
   max-width: 400px;
   display: flex;
