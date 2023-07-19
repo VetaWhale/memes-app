@@ -54,6 +54,8 @@ option {
   top: 0;
   left: 0;
   width: 100%;
+  border-radius: 15px;
+  box-shadow: 0px 0px 10px 3px #000;
 }
 .preview__top-text,
 .preview__bottom-text {
