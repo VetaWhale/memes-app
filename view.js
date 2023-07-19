@@ -15,8 +15,8 @@ class View {
     this.onNewMem = onNewMem;
 
     this.listNode.addEventListener("change", this._handleSelectMem);
-    this.inputTopText.addEventListener("keydown", this._handleTopText);
-    this.inputBottomText.addEventListener("keydown", this._handleBottomText);
+    this.inputTopText.addEventListener("keyup", this._handleTopText);
+    this.inputBottomText.addEventListener("keyup", this._handleBottomText);
   }
 
   renderMemsList(memes) {
@@ -63,8 +63,9 @@ class View {
 
     if (text.length >= 50) return this._renderErrorTopText(this.ERROR_TEXT);
 
-    this._renderErrorTopText("");
     this._renderTopText(text);
+    this._renderErrorTopText("");
+    
   };
   _handleBottomText = () => {
     const text = this.inputBottomText.value;
