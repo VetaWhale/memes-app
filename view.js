@@ -41,7 +41,6 @@ class View {
     const memUrl = this.onNewMem(this.getSelectMem());
 
     this.renderImgMem(memUrl);
-    this._clearTextMem();
   };
 
   _renderTopText = (text) => {
@@ -74,12 +73,5 @@ class View {
 
     this._renderErrorBottomText("");
     this._renderBottomText(text);
-  };
-
-  _clearTextMem = () => {
-    this.inputTopText.value = "";
-    this.inputBottomText.value = "";
-    this.textTop.innerText = "";
-    this.textBottom.innerText = "";
   };
 }
