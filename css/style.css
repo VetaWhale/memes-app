@@ -8,6 +8,7 @@ h2 {
   font-weight: 700;
   font-size: 50px;
   line-height: 60px;
+  margin-bottom: 30px;
 }
 input,
 select,
@@ -24,6 +25,7 @@ option {
   max-width: 400px;
   display: flex;
   flex-direction: column;
+  gap: 20px;
 }
 .settings-options {
   padding: 10px 20px;
@@ -53,21 +55,26 @@ option {
   left: 0;
   width: 100%;
 }
-.preview__top-text {
+.preview__top-text,
+.preview__bottom-text {
+  box-sizing: border-box;
   position: absolute;
   width: 100%;
-  top: 10px;
-  left: 0;
+  background-color: rgba(0.1, 0.1, 0.1, 0.4);
+  opacity: 0.7;
+  text-shadow: 1px 1px 2px white;
+  color: black;
   text-align: center;
   word-break: break-all;
+  line-height: 40px;
+}
+.preview__top-text {
+  top: 20px;
+  left: 0;
 }
 .preview__bottom-text {
-  position: absolute;
-  width: 100%;
-  bottom: 10px;
+  bottom: 20px;
   left: 0;
-  text-align: center;
-  word-break: break-all;
 }
 @media only screen and (max-width: 915px) {
     .container {
